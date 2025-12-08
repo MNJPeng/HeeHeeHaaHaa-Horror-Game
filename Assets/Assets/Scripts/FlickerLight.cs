@@ -25,6 +25,18 @@ public class CreepyFlicker : MonoBehaviour
         StartCoroutine(FlickerRoutine());
     }
 
+    private IEnumerator FadeLight(float from, float to, float duration)
+    {
+        float t = 0f;
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            float progress = Mathf.Clamp01(t / duration);
+            lightSource.intensity = Mathf.SmoothStep(from, to, progress);
+            yield return null;
+        }
+    }
+
     IEnumerator FlickerRoutine()
     {
         while (true)
@@ -32,8 +44,9 @@ public class CreepyFlicker : MonoBehaviour
             // Decide if we do a blackout
             if (Random.value < blackoutChance)
             {
+                Debug.Log("blackout");
                 float blackoutTime = Random.Range(minBlackout, maxBlackout);
-                lightSource.intensity = 0f;
+                yield return FadeLight(lightSource.intensity, 0f, 0.1f);
                 yield return new WaitForSeconds(blackoutTime);
             }
 
