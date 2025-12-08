@@ -1130,7 +1130,7 @@ Light:
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 42.1
-  m_Range: 12.207292
+  m_Range: 12.950572
   m_SpotAngle: 94.48686
   m_InnerSpotAngle: 57.828392
   m_CookieSize2D: {x: 0.5, y: 0.5}
@@ -1191,13 +1191,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487949072}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.60749155, y: -0, z: -0, w: 0.7943262}
-  m_LocalPosition: {x: -1, y: 9.83, z: -3.97}
+  m_LocalRotation: {x: 0.68772566, y: -0, z: -0, w: 0.7259707}
+  m_LocalPosition: {x: -1, y: 9.83, z: -4.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 74.817, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 86.901, y: 0, z: 0}
 --- !u!114 &1487949077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1212,7 +1212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   lightSource: {fileID: 1487949074}
   baseIntensity: 42
-  flickerIntensity: 5
+  flickerIntensity: 8
   minFlickerDuration: 0.1
   maxFlickerDuration: 0.3
   blackoutChance: 0.015
