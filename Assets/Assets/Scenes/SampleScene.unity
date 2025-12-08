@@ -850,7 +850,7 @@ MonoBehaviour:
   mouseSensitivity: 15
   rb: {fileID: 2081224939}
   playerInput: {fileID: 2081224945}
-  cameraTransform: {fileID: 0}
+  cameraTransform: {fileID: 330585546}
 --- !u!114 &2081224945
 MonoBehaviour:
   m_ObjectHideFlags: 0
