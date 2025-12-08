@@ -10,8 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0b97998cdd9f494c905dfd59545bfb8, type: 3}
-  m_Name: test
+  m_Name: cannotinterrupt
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   lines:
-  - hello world
-  - this is a test dialogue
+  - text: this dialogue will not be interrupted by anything
+  - text: la la la la la
+  - text: hehehehehehahahaha
+  canInterrupt: 1
+  canBeInterrupted: 0
