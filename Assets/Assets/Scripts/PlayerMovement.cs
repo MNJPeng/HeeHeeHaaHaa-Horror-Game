@@ -29,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        rb.angularVelocity = Vector3.zero; // Fixes issue where collision causes repeated spinning
         HandleMovement();
         HandleLook();
     }
