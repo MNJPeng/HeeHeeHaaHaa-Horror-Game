@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class DialogueManager : MonoBehaviour
     [Header("References")]
     public TextMeshProUGUI subtitleText;
 
+    public event Action<Dialogue> onDialogueEnd; // the argument is the dialogue that just ended
+
     // call this from other scripts to start a dialogue
     public void StartDialogue(Dialogue dialogue) {
         // we are still in a dialogue, don't interrupt
@@ -28,12 +31,15 @@ public class DialogueManager : MonoBehaviour
 
         StopAllCoroutines();
 
+        if (isInDialogue) {
+            EndDialogue();
+        }
+
         currentDialogue = dialogue;
         sentences = new Queue<string>();
         foreach (DialogueLine line in dialogue.lines) {
             sentences.Enqueue(line.text);
         }
-
         
         StartCoroutine(PlayDialogue());
     }
@@ -57,6 +63,13 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(lineDelay);
         }
 
+        EndDialogue();
+    }
+
+    void EndDialogue() {
+        onDialogueEnd?.Invoke(currentDialogue);
+
+        currentDialogue = null;
         subtitleText.text = "";
         isInDialogue = false; 
     }
