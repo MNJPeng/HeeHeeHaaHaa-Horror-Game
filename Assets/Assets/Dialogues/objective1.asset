@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0b97998cdd9f494c905dfd59545bfb8, type: 3}
-  m_Name: interactable
+  m_Name: objective1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  id: interactable
+  id: objective1
   lines:
-  - text: Yo!
-  - text: You have interacted with this object
-  - text: Huzzah!
+  - text: this is dialogue objective 1
   canInterrupt: 1
   canBeInterrupted: 1

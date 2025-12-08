@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: interrptTest
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  id: interrupt
   lines:
   - text: this is an interruptable dialogue
   - text: it will interrupt other dialogues

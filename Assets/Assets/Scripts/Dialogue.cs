@@ -8,9 +8,10 @@ public class DialogueLine
     [TextArea(3, 10)] public string text;
 }
 
-[CreateAssetMenu(fileName = "NewDialogue", menuName = "Dialogue System/Dialogue")]
+[CreateAssetMenu(fileName = "NewDialogue", menuName = "Scriptable Objects/Dialogue")]
 public class Dialogue : ScriptableObject
 {
+    public string id;
     public List<DialogueLine> lines = new List<DialogueLine>();
     public bool canInterrupt = false; // can this dialogue interrupt other ongoing dialogues
 

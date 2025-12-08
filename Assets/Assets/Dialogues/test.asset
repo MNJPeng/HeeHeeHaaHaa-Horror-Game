@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: test
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  id: test
   lines:
   - text: hello world
   - text: testing 1 2 3
