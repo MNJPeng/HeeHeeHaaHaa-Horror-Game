@@ -205,13 +205,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87210871}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.91, y: 1.88, z: -11.79}
+  m_LocalRotation: {x: 0.0748791, y: -0, z: -0, w: 0.9971927}
+  m_LocalPosition: {x: -0.91, y: 4.22, z: -14.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 8.589, y: 0, z: 0}
 --- !u!114 &87210875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1064,7 +1064,7 @@ Transform:
   m_GameObject: {fileID: 1139800079}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.93, y: 2.32, z: 3.92}
+  m_LocalPosition: {x: -0.93, y: 2.32, z: 4.97}
   m_LocalScale: {x: 16.729279, y: 6.4791, z: 0.2422}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1081,7 +1081,7 @@ GameObject:
   - component: {fileID: 1487949075}
   - component: {fileID: 1487949074}
   - component: {fileID: 1487949073}
-  - component: {fileID: 1487949076}
+  - component: {fileID: 1487949077}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -1129,10 +1129,10 @@ Light:
   serializedVersion: 12
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 16.5
-  m_Range: 10
-  m_SpotAngle: 80.09513
-  m_InnerSpotAngle: 61.102974
+  m_Intensity: 42.1
+  m_Range: 12.207292
+  m_SpotAngle: 94.48686
+  m_InnerSpotAngle: 57.828392
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
     m_Type: 0
@@ -1191,14 +1191,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487949072}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.62154955, y: -0, z: -0, w: 0.7833749}
-  m_LocalPosition: {x: -1, y: 7.96, z: -5.03}
+  m_LocalRotation: {x: 0.60749155, y: -0, z: -0, w: 0.7943262}
+  m_LocalPosition: {x: -1, y: 9.83, z: -3.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 76.859, y: 0, z: 0}
---- !u!114 &1487949076
+  m_LocalEulerAnglesHint: {x: 74.817, y: 0, z: 0}
+--- !u!114 &1487949077
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1207,14 +1207,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1487949072}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b934d3e4078839341976ffdb4537e21a, type: 3}
+  m_Script: {fileID: 11500000, guid: f4de0c481e6641941ad89b7b7f319397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  light: {fileID: 1487949074}
-  minIntensity: 0
-  maxIntensity: 20
-  smoothing: 7
-  lastSum: 0
+  lightSource: {fileID: 1487949074}
+  baseIntensity: 42
+  flickerIntensity: 5
+  minFlickerDuration: 0.1
+  maxFlickerDuration: 0.3
+  blackoutChance: 0.015
+  minBlackout: 0.2
+  maxBlackout: 0.4
 --- !u!1 &1611432889
 GameObject:
   m_ObjectHideFlags: 0
