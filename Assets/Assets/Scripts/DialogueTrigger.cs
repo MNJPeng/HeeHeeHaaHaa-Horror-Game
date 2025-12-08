@@ -3,8 +3,11 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     [Header("Settings")]
-    [SerializeField] private string filename;
+    [SerializeField] private Dialogue dialogue;
     [SerializeField] private bool isOneTime = true;
+
+    [Header("References")]
+    public DialogueManager dialogueManager;
     
     private bool hasTriggered = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,12 +23,10 @@ public class DialogueTrigger : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider coll) {
-        if (coll.gameObject.tag == "Player" && (!isOneTime || isOneTime && !hasTriggered)) {
-            Debug.Log("trigger");
-        }
-    }
+        if (!coll.CompareTag("Player")) return;
+        if (isOneTime && hasTriggered) return;
 
-    void TriggerDialogue(string filename) {
-
+        dialogueManager.StartDialogue(dialogue);
+        hasTriggered = true;
     }
 }
