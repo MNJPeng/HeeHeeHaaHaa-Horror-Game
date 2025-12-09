@@ -237,6 +237,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 374668840}
   dialogue: {fileID: 11400000, guid: 76874936180139540b596490b5455cd7, type: 2}
+  unscanned: {fileID: 2100000, guid: e65a31ccb7bc961418f716fa4e4e4216, type: 2}
+  scanned: {fileID: 2100000, guid: f562a58336ca302478841f97a712194e, type: 2}
+  mat: {fileID: 1977847644}
 --- !u!65 &4219193
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3480,6 +3483,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 374668840}
   dialogue: {fileID: 11400000, guid: 0e558ca6c9a52f64cad44c4b03fda89f, type: 2}
+  unscanned: {fileID: 2100000, guid: 476bb2bbacd2d544c852ade4b81c8238, type: 2}
+  scanned: {fileID: 2100000, guid: cb0f19084c68fa343b40c22f7eb8704b, type: 2}
+  mat: {fileID: 526474036}
 --- !u!65 &103746610
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3499,8 +3505,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.15255213, y: 0.2372073, z: 1}
-  m_Center: {x: 0.2230084, y: -0.004899353, z: 0}
+  m_Size: {x: 0.19033909, y: 0.19992542, z: 1}
+  m_Center: {x: 0.083618164, y: -0.28129864, z: 0}
 --- !u!43 &104036399
 Mesh:
   m_ObjectHideFlags: 0
@@ -10042,7 +10048,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  - {fileID: 2100000, guid: 7ad0ca463aebfee459d293ab7735d553, type: 2}
+  - {fileID: 2100000, guid: 0d65e560b61b15a4f894615f30c1945b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16105,6 +16111,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 374668840}
   dialogue: {fileID: 11400000, guid: 6aacda199e920ab499b136d1a26d113f, type: 2}
+  unscanned: {fileID: 2100000, guid: c7c65608b5872b6499ae5e98780b1dac, type: 2}
+  scanned: {fileID: 2100000, guid: a40d1dd6cd0d84b4a9ea8a3830228e00, type: 2}
+  mat: {fileID: 1092124133}
 --- !u!65 &395434206
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16124,8 +16133,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.15255213, y: 0.2372073, z: 1}
-  m_Center: {x: 0.2230084, y: -0.004899353, z: 0}
+  m_Size: {x: 0.143404, y: 0.1698513, z: 1}
+  m_Center: {x: 0.01554966, y: 0.15782928, z: 0}
 --- !u!4 &396966674 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7876394803398774733, guid: 50d85b7ee18f99d45ad8c2fd484f78f2, type: 3}
@@ -18970,7 +18979,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  - {fileID: 2100000, guid: cb0f19084c68fa343b40c22f7eb8704b, type: 2}
+  - {fileID: 2100000, guid: 476bb2bbacd2d544c852ade4b81c8238, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19218,7 +19227,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  - {fileID: 2100000, guid: df7d1bda05b76eb4faa57caece39919c, type: 2}
+  - {fileID: 2100000, guid: 7203eb2bc356a0449bec4d22da5a12fc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20402,6 +20411,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 374668840}
   dialogue: {fileID: 11400000, guid: da9b70ef15cb0f941ab69cc0a77ed0af, type: 2}
+  unscanned: {fileID: 2100000, guid: 1ca751e6461532e4c98baee5dcee79b4, type: 2}
+  scanned: {fileID: 2100000, guid: e36a728c609257b4cb452909a856a4ba, type: 2}
+  mat: {fileID: 1542634212}
 --- !u!65 &564670746
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20421,8 +20433,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.15255213, y: 0.2372073, z: 1}
-  m_Center: {x: 0.2230084, y: -0.004899353, z: 0}
+  m_Size: {x: 0.36559343, y: 0.44098505, z: 1}
+  m_Center: {x: 0.11648774, y: -0.10678823, z: 0}
 --- !u!43 &569270927
 Mesh:
   m_ObjectHideFlags: 0
@@ -21671,6 +21683,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 374668840}
   dialogue: {fileID: 11400000, guid: 576d37f66e130464fbbb70f599f5d148, type: 2}
+  unscanned: {fileID: 2100000, guid: c052a9e8d7eec9c4fa617c1417d751cb, type: 2}
+  scanned: {fileID: 2100000, guid: c8a99a68be176ec4796df05edec8380b, type: 2}
+  mat: {fileID: 1221293705}
 --- !u!65 &609996655
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21690,8 +21705,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.19453436, y: 0.10162625, z: 1}
-  m_Center: {x: -0.1404126, y: -0.37636346, z: 0}
+  m_Size: {x: 0.12714148, y: 0.18784761, z: 1}
+  m_Center: {x: 0.016118288, y: -0.011603117, z: 0}
 --- !u!1 &611203327
 GameObject:
   m_ObjectHideFlags: 0
@@ -21858,6 +21873,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 374668840}
   dialogue: {fileID: 11400000, guid: c5d0d6c11f4e59640a82f79f29292170, type: 2}
+  unscanned: {fileID: 2100000, guid: 7203eb2bc356a0449bec4d22da5a12fc, type: 2}
+  scanned: {fileID: 2100000, guid: df7d1bda05b76eb4faa57caece39919c, type: 2}
+  mat: {fileID: 537668045}
 --- !u!65 &614614656
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21877,8 +21895,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.15255213, y: 0.2372073, z: 1}
-  m_Center: {x: 0.2230084, y: -0.004899353, z: 0}
+  m_Size: {x: 0.2223301, y: 0.17845368, z: 1}
+  m_Center: {x: 0.0313282, y: -0.16812968, z: 0}
 --- !u!1001 &614619560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24596,6 +24614,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 374668840}
   dialogue: {fileID: 11400000, guid: e924db8e1997f49429328e7ee4856659, type: 2}
+  unscanned: {fileID: 2100000, guid: fd7eb110359bc0d45b0da9bd7993441f, type: 2}
+  scanned: {fileID: 2100000, guid: 132f793926757e54db2fa69850a41128, type: 2}
+  mat: {fileID: 1119407050}
 --- !u!65 &707121637
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24615,8 +24636,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.15255213, y: 0.2372073, z: 1}
-  m_Center: {x: 0.2230084, y: -0.004899353, z: 0}
+  m_Size: {x: 0.13375273, y: 0.1859084, z: 1}
+  m_Center: {x: 0.3238132, y: 0.02075009, z: 1.2152971e-14}
 --- !u!1001 &713020038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31872,6 +31893,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 374668840}
   dialogue: {fileID: 11400000, guid: 4f271ca96b84ec04fa3884547358f000, type: 2}
+  unscanned: {fileID: 2100000, guid: 604933c8b0e629440a873e58da2098db, type: 2}
+  scanned: {fileID: 2100000, guid: 16965f733f7d7a544bb03ab801a8fcb1, type: 2}
+  mat: {fileID: 1214344426}
 --- !u!65 &911298681
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31891,8 +31915,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.37801075, y: 0.18236369, z: 1}
-  m_Center: {x: -0.0023612976, y: -0.20545688, z: 0}
+  m_Size: {x: 0.11900723, y: 0.14927208, z: 1}
+  m_Center: {x: 0.022743642, y: -0.3028012, z: 0}
 --- !u!1001 &912461165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35164,6 +35188,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 0}
   dialogue: {fileID: 0}
+  unscanned: {fileID: 0}
+  scanned: {fileID: 0}
+  mat: {fileID: 0}
 --- !u!65 &1005967239
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36307,7 +36334,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  - {fileID: 2100000, guid: 9f14336f6d28b2740bf018b758eb61a0, type: 2}
+  - {fileID: 2100000, guid: 03ca958edb49eed4580ec3649519b6d9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -38176,7 +38203,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  - {fileID: 2100000, guid: 1535c13c1c03adc4889c9e940dea269a, type: 2}
+  - {fileID: 2100000, guid: f9fb40871b4947b46ae47685ca175562, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -38467,7 +38494,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  - {fileID: 2100000, guid: a40d1dd6cd0d84b4a9ea8a3830228e00, type: 2}
+  - {fileID: 2100000, guid: c7c65608b5872b6499ae5e98780b1dac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39413,7 +39440,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  - {fileID: 2100000, guid: 132f793926757e54db2fa69850a41128, type: 2}
+  - {fileID: 2100000, guid: fd7eb110359bc0d45b0da9bd7993441f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -40656,7 +40683,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  - {fileID: 2100000, guid: a846e0c5b145a9b4cb4ef96ce2284673, type: 2}
+  - {fileID: 2100000, guid: ca2c6e96101be3846a7c14a430242bbc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -42380,7 +42407,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  - {fileID: 2100000, guid: 16965f733f7d7a544bb03ab801a8fcb1, type: 2}
+  - {fileID: 2100000, guid: 604933c8b0e629440a873e58da2098db, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -42685,7 +42712,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  - {fileID: 2100000, guid: c8a99a68be176ec4796df05edec8380b, type: 2}
+  - {fileID: 2100000, guid: c052a9e8d7eec9c4fa617c1417d751cb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -45981,6 +46008,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 374668840}
   dialogue: {fileID: 11400000, guid: d0ec8475c94279d4a8161dc5cfc8a588, type: 2}
+  unscanned: {fileID: 2100000, guid: eebf574984817d240a56ab3061b9ae9e, type: 2}
+  scanned: {fileID: 2100000, guid: 5fa6bdb08f4b08b448d6b10be6e21176, type: 2}
+  mat: {fileID: 1722654335}
 --- !u!65 &1342876593
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46000,8 +46030,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.15255213, y: 0.2372073, z: 1}
-  m_Center: {x: 0.2230084, y: -0.004899353, z: 0}
+  m_Size: {x: 0.1206458, y: 0.17615199, z: 1}
+  m_Center: {x: -0.15183653, y: -0.1767453, z: 7.9082215e-15}
 --- !u!43 &1348602839
 Mesh:
   m_ObjectHideFlags: 0
@@ -48788,6 +48818,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 374668840}
   dialogue: {fileID: 11400000, guid: f245e97bddd936042965d2b448390979, type: 2}
+  unscanned: {fileID: 2100000, guid: 03ca958edb49eed4580ec3649519b6d9, type: 2}
+  scanned: {fileID: 2100000, guid: 9f14336f6d28b2740bf018b758eb61a0, type: 2}
+  mat: {fileID: 1050572134}
 --- !u!65 &1406451810
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48807,8 +48840,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.15255213, y: 0.2372073, z: 1}
-  m_Center: {x: 0.2230084, y: -0.004899353, z: 0}
+  m_Size: {x: 0.3510504, y: 0.2372073, z: 1}
+  m_Center: {x: -0.2848365, y: -0.004899353, z: 1.9242793e-14}
 --- !u!1001 &1408872962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52284,7 +52317,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  - {fileID: 2100000, guid: 5ab2de051ed00e14c9d51dbd76092479, type: 2}
+  - {fileID: 2100000, guid: fbd747684f571e849806af4590f7f962, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -52454,7 +52487,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  - {fileID: 2100000, guid: e36a728c609257b4cb452909a856a4ba, type: 2}
+  - {fileID: 2100000, guid: 1ca751e6461532e4c98baee5dcee79b4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -56955,6 +56988,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 374668840}
   dialogue: {fileID: 11400000, guid: 7fb60f7699af83b40ae059d16e41bc25, type: 2}
+  unscanned: {fileID: 2100000, guid: f9fb40871b4947b46ae47685ca175562, type: 2}
+  scanned: {fileID: 2100000, guid: 1535c13c1c03adc4889c9e940dea269a, type: 2}
+  mat: {fileID: 1091038398}
 --- !u!65 &1658976465
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56974,8 +57010,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.15255213, y: 0.2372073, z: 1}
-  m_Center: {x: 0.2230084, y: -0.004899353, z: 0}
+  m_Size: {x: 0.2555989, y: 0.28846335, z: 1}
+  m_Center: {x: -0.07133805, y: 0.20262063, z: 4.7872464e-15}
 --- !u!4 &1666221692 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1136005721367370410, guid: e766725ef3081cf49ada3b85e6442f18, type: 3}
@@ -58299,6 +58335,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 374668840}
   dialogue: {fileID: 11400000, guid: 04e1e1e905b018349bfebec2be15d8a1, type: 2}
+  unscanned: {fileID: 2100000, guid: ca2c6e96101be3846a7c14a430242bbc, type: 2}
+  scanned: {fileID: 2100000, guid: a846e0c5b145a9b4cb4ef96ce2284673, type: 2}
+  mat: {fileID: 1159738952}
 --- !u!65 &1700901518
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58318,8 +58357,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.13288587, y: 0.23073746, z: 1}
-  m_Center: {x: 0.2222149, y: -0.2769441, z: 0}
+  m_Size: {x: 0.22060275, y: 0.16483939, z: 1}
+  m_Center: {x: -0.010870099, y: -0.079987586, z: 0}
 --- !u!4 &1705032488 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7876394803398774733, guid: 50d85b7ee18f99d45ad8c2fd484f78f2, type: 3}
@@ -58745,7 +58784,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  - {fileID: 2100000, guid: 5fa6bdb08f4b08b448d6b10be6e21176, type: 2}
+  - {fileID: 2100000, guid: eebf574984817d240a56ab3061b9ae9e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -58824,6 +58863,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 374668840}
   dialogue: {fileID: 11400000, guid: 2e90603df8fe3ad4383f0008fa2aba0b, type: 2}
+  unscanned: {fileID: 2100000, guid: fbd747684f571e849806af4590f7f962, type: 2}
+  scanned: {fileID: 2100000, guid: 5ab2de051ed00e14c9d51dbd76092479, type: 2}
+  mat: {fileID: 1520398331}
 --- !u!65 &1727091123
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58843,8 +58885,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.15255213, y: 0.2372073, z: 1}
-  m_Center: {x: 0.2230084, y: -0.004899353, z: 0}
+  m_Size: {x: 0.10751724, y: 0.15017152, z: 1}
+  m_Center: {x: -0.13314247, y: -0.2527238, z: 0}
 --- !u!4 &1728296461 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7727897487131782620, guid: 2993d6df76c34364ba5321fc51afe304, type: 3}
@@ -60551,6 +60593,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 374668840}
   dialogue: {fileID: 11400000, guid: ba3b97a0d3294174085f83b75f7144bb, type: 2}
+  unscanned: {fileID: 2100000, guid: 0e4bec4c669c53c4f8c9444cd1f94935, type: 2}
+  scanned: {fileID: 2100000, guid: 89ca90690aa0e3449a63b75edc89ffd6, type: 2}
+  mat: {fileID: 1780724932}
 --- !u!65 &1768501518
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60570,8 +60615,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.15255213, y: 0.2372073, z: 1}
-  m_Center: {x: 0.2230084, y: -0.004899353, z: 0}
+  m_Size: {x: 0.19350106, y: 0.26065087, z: 1}
+  m_Center: {x: 0.0071502468, y: -0.23072422, z: -1.9039977e-16}
 --- !u!1001 &1768696440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61091,7 +61136,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  - {fileID: 2100000, guid: 89ca90690aa0e3449a63b75edc89ffd6, type: 2}
+  - {fileID: 2100000, guid: 0e4bec4c669c53c4f8c9444cd1f94935, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -64631,6 +64676,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 374668840}
   dialogue: {fileID: 11400000, guid: af4fd39f81c11ed4988a09505620de4a, type: 2}
+  unscanned: {fileID: 2100000, guid: 0d65e560b61b15a4f894615f30c1945b, type: 2}
+  scanned: {fileID: 2100000, guid: 7ad0ca463aebfee459d293ab7735d553, type: 2}
+  mat: {fileID: 275438194}
 --- !u!65 &1881832951
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64650,8 +64698,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.15255213, y: 0.2372073, z: 1}
-  m_Center: {x: 0.2230084, y: -0.004899353, z: 0}
+  m_Size: {x: 0.22751683, y: 0.21031451, z: 1}
+  m_Center: {x: -0.20606896, y: -0.15937555, z: -1.956602e-15}
 --- !u!1001 &1890103710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65696,6 +65744,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 374668840}
   dialogue: {fileID: 11400000, guid: 937e6d50d02d49a46be0a5530ed8b581, type: 2}
+  unscanned: {fileID: 2100000, guid: 964125457a57b6c44892e7153f78ba42, type: 2}
+  scanned: {fileID: 2100000, guid: 782b9ee407b2ff649b2aae0f11758eb9, type: 2}
+  mat: {fileID: 2004899586}
 --- !u!65 &1926415571
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65715,8 +65766,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.15255213, y: 0.2372073, z: 1}
-  m_Center: {x: 0.2230084, y: -0.004899353, z: 0}
+  m_Size: {x: 0.1538539, y: 0.2372073, z: 1}
+  m_Center: {x: -0.2760613, y: -0.004899353, z: 0}
 --- !u!1001 &1927549624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67499,7 +67550,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  - {fileID: 2100000, guid: f562a58336ca302478841f97a712194e, type: 2}
+  - {fileID: 2100000, guid: e65a31ccb7bc961418f716fa4e4e4216, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -68461,7 +68512,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  - {fileID: 2100000, guid: 782b9ee407b2ff649b2aae0f11758eb9, type: 2}
+  - {fileID: 2100000, guid: 964125457a57b6c44892e7153f78ba42, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
