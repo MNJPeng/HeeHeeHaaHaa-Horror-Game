@@ -6,6 +6,7 @@ using UnityEngine;
 public class DialogueLine
 {
     [TextArea(3, 10)] public string text;
+	public bool isItalic;
 }
 
 [CreateAssetMenu(fileName = "NewDialogue", menuName = "Scriptable Objects/Dialogue")]

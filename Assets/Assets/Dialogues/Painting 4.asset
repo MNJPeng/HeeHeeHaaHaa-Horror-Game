@@ -14,6 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   id: test
   lines:
-  - text: Is he hunting them, or is he, too, being hunted?
+  - text: When they came, we fled.
+    isItalic: 1
+  - text: But where could we go?
+    isItalic: 1
+  - text: Now that's a good question.
+    isItalic: 0
   canInterrupt: 1
   canBeInterrupted: 1

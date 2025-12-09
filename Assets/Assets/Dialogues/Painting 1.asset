@@ -14,6 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   id: test
   lines:
-  - text: A picnic?
+  - text: In a time before the war, we had peace.
+    isItalic: 1
+  - text: Freedom. Life.
+    isItalic: 1
+  - text: Sure we did...
+    isItalic: 0
   canInterrupt: 1
   canBeInterrupted: 1

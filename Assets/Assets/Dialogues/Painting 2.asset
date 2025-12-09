@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   id: test
   lines:
-  - text: A candle on a desk...
-  - text: ...illuminating a curious painting
+  - text: In times of peace, we admire the scenery, enjoy the art,
+    isItalic: 1
+  - text: Admiring this art? Must've been blind.
+    isItalic: 0
   canInterrupt: 1
   canBeInterrupted: 1
