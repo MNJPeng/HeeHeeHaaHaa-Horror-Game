@@ -34,36 +34,20 @@ public class LightSafeZone : MonoBehaviour
 
     private void CheckInitialColliders()
     {
-        Vector3 point1, point2;
-        float radius = capsule.radius;
+        BoxCollider box = GetComponent<BoxCollider>();
 
-        // Determine capsule ends based on orientation
-        Vector3 center = capsule.bounds.center;
-        float height = Mathf.Max(capsule.height / 2f - radius, 0f);
+        // Calculate the world half extents (scaled with transform)
+        Vector3 halfExtents = Vector3.Scale(box.size * 0.5f, transform.lossyScale);
 
-        switch (capsule.direction)
+        // The center in world space
+        Vector3 worldCenter = transform.TransformPoint(box.center);
+
+        // Get all overlapping colliders
+        Collider[] hits = Physics.OverlapBox(worldCenter, halfExtents, transform.rotation);
+
+        foreach (var col in hits)
         {
-            case 0: // X axis
-                point1 = center + Vector3.right * height;
-                point2 = center - Vector3.right * height;
-                break;
-            case 1: // Y axis
-                point1 = center + Vector3.up * height;
-                point2 = center - Vector3.up * height;
-                break;
-            case 2: // Z axis
-            default:
-                point1 = center + Vector3.forward * height;
-                point2 = center - Vector3.forward * height;
-                break;
-        }
-
-        // Check for colliders inside capsule
-        Collider[] collidersInside = Physics.OverlapCapsule(point1, point2, radius);
-
-        foreach (var col in collidersInside)
-        {
-            if (col.gameObject.CompareTag("Player") && isOn)
+            if (col.CompareTag("Player") && isOn)
             {
                 LightZoneManager.instance.EnterZone(this);
             }
