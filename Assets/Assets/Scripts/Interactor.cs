@@ -11,7 +11,7 @@ public class Interactor : MonoBehaviour
 
     [Header("References")]
     public PlayerInput playerInput;
-    public GameObject tooltipCanvas;
+    public CanvasGroup tooltipCanvas;
     public TextMeshProUGUI tooltipText;
 
     private Transform interactorSource;
@@ -22,10 +22,9 @@ public class Interactor : MonoBehaviour
     void Start()
     {
         interactorSource = transform;
-
         interactAction = playerInput.actions["Interact"];
         interactAction.Enable();
-        tooltipCanvas.SetActive(false);
+		tooltipCanvas.alpha = 0f;
     }
 
     void OnDisable() => interactAction.Disable();
@@ -34,9 +33,13 @@ public class Interactor : MonoBehaviour
     void Update()
     {
         currInteractObj = null;
-        tooltipCanvas.SetActive(false);
-
-        Ray ray = new Ray(interactorSource.position, interactorSource.forward);
+		tooltipCanvas.alpha = 0f;
+		
+		if (PauseMenu.isPaused) {
+			return;
+		}
+		
+        Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0));;
 
         if (Physics.SphereCast(ray, interactRadius, out RaycastHit hitInfo, interactRange) &&
             hitInfo.collider.TryGetComponent(out Interactable interactObj))
@@ -44,7 +47,7 @@ public class Interactor : MonoBehaviour
             if (!interactObj.CheckIsInteractable()) return;
 
             currInteractObj = interactObj;
-            tooltipCanvas.SetActive(true);
+			tooltipCanvas.alpha = 1f;
             tooltipText.text = interactObj.GetInteractTip();
         }
 
