@@ -767,8 +767,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd3aeb3956821f24dbae93ef143eb8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  moveSpeed: 5
-  sprintSpeed: 10
+  moveSpeed: 2.5
+  sprintSpeed: 5.5
   mouseSensitivity: 15
   rb: {fileID: 3776614852046929086}
   playerInput: {fileID: 2479102925453901917}
