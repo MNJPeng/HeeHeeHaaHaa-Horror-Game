@@ -14,14 +14,14 @@ public class DialogueInteractable : Interactable
     public override void Interact() {
         dialogueManager.StartDialogue(dialogue);
         canInteract = false;
-        dialogueManager.onDialogueEnd += OnDialogueEnd;
+        DialogueManager.onDialogueEnd += OnDialogueEnd;
     }
 
     public void OnDialogueEnd(Dialogue dialogueEnded) {
         if (dialogueEnded == dialogue) {
             Debug.Log("unsubscribe");
             canInteract = true;
-            dialogueManager.onDialogueEnd -= OnDialogueEnd;
+            DialogueManager.onDialogueEnd -= OnDialogueEnd;
         }
     }
 
