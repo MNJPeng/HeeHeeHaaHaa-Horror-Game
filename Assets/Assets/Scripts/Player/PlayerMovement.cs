@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
 	
 	private float analyzeTime = 0f;
 	private bool canAnalyze = true;
-    private AudioSource audioSource;
+    public AudioSource audioSource;
 	[SerializeField] private Image analyzeCircle;
 	[SerializeField] private Image validAnalyze;
 	[SerializeField] private Image invalidAnalyze;
@@ -35,8 +35,6 @@ public class PlayerMovement : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        audioSource = GetComponent<AudioSource>();
-
         // Setup Actions
         // Make sure the name "Sprint" matches exactly what you typed in the Input Actions window
         moveAction = playerInput.actions["Move"];
