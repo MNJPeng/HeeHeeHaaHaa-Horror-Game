@@ -1,14 +1,22 @@
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))] // Automatically adds an AudioSource if missing
 public class DoorInteractable : Interactable
 {
 
     [SerializeField] private string interactTip; // What word shows up on the tooltip when you look at the object
+
+	[Header("Audio Settings")]
+    public AudioClip openSound;  // Drag your "Creak_Open.wav" here
+    public AudioClip closeSound; // Drag your "Slam_Close.wav" here
+
 	private Animator animator;
+	private AudioSource audioSource;
 	private bool isOpen;
 
 	void Start() {
 		animator = GetComponent<Animator>();
+		audioSource = GetComponent<AudioSource>();
 		isOpen = false;
 	}
 
@@ -19,10 +27,12 @@ public class DoorInteractable : Interactable
     public override void Interact() {
         canInteract = false;
 		if (isOpen) {
+			if (closeSound != null) audioSource.PlayOneShot(closeSound);
 			animator.SetTrigger("Close");
 			interactTip = "Open";
 			isOpen = false;
 		} else {
+			if (openSound != null) audioSource.PlayOneShot(openSound);
 			animator.SetTrigger("Open");
 			interactTip = "Close";
 			isOpen = true;
