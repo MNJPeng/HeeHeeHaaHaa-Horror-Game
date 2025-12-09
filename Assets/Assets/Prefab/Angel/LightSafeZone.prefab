@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 294836071408438087}
   - component: {fileID: 3722280226783405867}
   - component: {fileID: 2708345601180005172}
+  - component: {fileID: 8576876696031944850}
   m_Layer: 0
   m_Name: LightSafeZone
   m_TagString: Untagged
@@ -147,7 +148,7 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 4.19905
   m_Height: 15.363119
@@ -166,6 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightSafeZone
   isOn: 1
+  isFlickering: 0
   lightSource: {fileID: 7679836621281062384}
   duration: 6
   peakIntensity: 17
@@ -309,3 +311,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &8576876696031944850
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2682788350706072215}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6.9885635, y: 7.8564816, z: 13.760258}
+  m_Center: {x: 0.37742996, y: -1.0006118, z: 6.3801312}
