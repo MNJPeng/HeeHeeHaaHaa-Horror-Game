@@ -16,5 +16,5 @@ MonoBehaviour:
   lines:
   - text: A candle on a desk...
   - text: ...illuminating a curious painting
-  canInterrupt: 0
+  canInterrupt: 1
   canBeInterrupted: 1

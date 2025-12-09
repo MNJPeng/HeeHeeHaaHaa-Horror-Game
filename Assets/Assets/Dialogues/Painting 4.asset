@@ -15,5 +15,5 @@ MonoBehaviour:
   id: test
   lines:
   - text: Is he hunting them, or is he, too, being hunted?
-  canInterrupt: 0
+  canInterrupt: 1
   canBeInterrupted: 1

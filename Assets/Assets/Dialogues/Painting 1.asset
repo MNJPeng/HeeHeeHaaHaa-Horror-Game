@@ -15,5 +15,5 @@ MonoBehaviour:
   id: test
   lines:
   - text: A picnic?
-  canInterrupt: 0
+  canInterrupt: 1
   canBeInterrupted: 1

@@ -16,5 +16,5 @@ MonoBehaviour:
   lines:
   - text: There's a light peeking out behind the paintings
   - text: How strange...
-  canInterrupt: 0
+  canInterrupt: 1
   canBeInterrupted: 1
