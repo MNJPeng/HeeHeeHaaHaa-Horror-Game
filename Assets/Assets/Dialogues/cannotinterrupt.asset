@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b97998cdd9f494c905dfd59545bfb8, type: 3}
   m_Name: cannotinterrupt
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  id: cannotInterrupt
   lines:
   - text: this dialogue will not be interrupted by anything
   - text: la la la la la

@@ -34,8 +34,12 @@ public class Interactor : MonoBehaviour
     {
         currInteractObj = null;
 		tooltipCanvas.alpha = 0f;
-
-        Ray ray = new Ray(interactorSource.position, interactorSource.forward);
+		
+		if (PauseMenu.isPaused) {
+			return;
+		}
+		
+        Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0));;
 
         if (Physics.SphereCast(ray, interactRadius, out RaycastHit hitInfo, interactRange) &&
             hitInfo.collider.TryGetComponent(out Interactable interactObj))

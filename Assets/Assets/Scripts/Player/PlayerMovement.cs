@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -16,7 +17,15 @@ public class PlayerMovement : MonoBehaviour
     private InputAction moveAction;
     private InputAction lookAction;
     private InputAction sprintAction; // NEW: Reference to the sprint input
+	private InputAction analyzeAction;
     private float xRotation = 0f;
+	
+	private float analyzeTime = 0f;
+	private bool canAnalyze = true;
+	[SerializeField] private Image analyzeCircle;
+	[SerializeField] private Image validAnalyze;
+	[SerializeField] private Image invalidAnalyze;
+
 
     void Start()
     {
@@ -28,14 +37,45 @@ public class PlayerMovement : MonoBehaviour
         moveAction = playerInput.actions["Move"];
         lookAction = playerInput.actions["Look"];
         sprintAction = playerInput.actions["Sprint"]; // NEW: Get the action
+		analyzeAction = playerInput.actions["Analyze"];
     }
 
     void Update()
     {
         rb.angularVelocity = Vector3.zero;
-        HandleMovement();
-        HandleLook();
+		rb.linearVelocity = Vector3.zero;
+		if (analyzeAction.IsPressed()) {
+			HandleAnalyze();
+		} else {
+			analyzeTime = 0f;
+			analyzeCircle.fillAmount = 0f;
+			canAnalyze = true;
+			invalidAnalyze.enabled = false;
+			validAnalyze.enabled = false;
+			HandleMovement();
+			HandleLook();
+		}
     }
+
+	void HandleAnalyze()
+	{
+		analyzeTime += Time.deltaTime;
+		analyzeCircle.fillAmount = analyzeTime / 3f;
+		if (analyzeTime >= 3f && canAnalyze) {
+			analyzeCircle.fillAmount = 0f;
+			invalidAnalyze.enabled = true;
+			
+			Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0));;
+			if (Physics.SphereCast(ray, 0.1f, out RaycastHit hitInfo, 2f) &&
+				hitInfo.collider.TryGetComponent(out Scannable scannedObj))
+			{
+				validAnalyze.enabled = true;
+				invalidAnalyze.enabled = false;
+				scannedObj.Scan();
+			}
+			canAnalyze = false;
+		}
+	}
 
     void HandleMovement()
     {
