@@ -17,7 +17,7 @@ public class LightSafeZone : MonoBehaviour
     // Optional: control how chaotic the flicker becomes over time
     public AnimationCurve flickerFrequencyCurve;
 
-    private CapsuleCollider capsule;
+    private BoxCollider capsule;
     public AudioSource source;
 
 
@@ -28,7 +28,7 @@ public class LightSafeZone : MonoBehaviour
             lightSource = GetComponent<Light>();
         }
 
-        capsule = GetComponent<CapsuleCollider>();
+        capsule = GetComponent<BoxCollider>();
         CheckInitialColliders();
     }
 
