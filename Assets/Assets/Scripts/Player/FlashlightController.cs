@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem; // Required namespace
+using System.Collections;
 
 public class FlashlightController : MonoBehaviour
 {
@@ -8,6 +9,13 @@ public class FlashlightController : MonoBehaviour
     public InputActionReference flashlightInput;
 
     private Light flashlight;
+
+    private float maxStamina = 100f; 
+    public float currentStamina = 100f;
+    public float drainSpeed = 0.2f;
+    public float rechargeSpeed = 2f;
+
+    public bool outOfBattery = false;
 
     void Awake()
     {
@@ -33,6 +41,59 @@ public class FlashlightController : MonoBehaviour
     // The function that runs when F is pressed
     private void ToggleLight(InputAction.CallbackContext context)
     {
+        if (outOfBattery) return;
+
         flashlight.enabled = !flashlight.enabled;
+    }
+
+    void Update()
+    {   
+        if (outOfBattery)
+        {
+            currentStamina = Mathf.Min(currentStamina + rechargeSpeed * Time.deltaTime, maxStamina);
+
+            if (currentStamina == maxStamina)
+            {
+                outOfBattery = false;
+                flashlight.enabled = true;
+            }
+
+            return;
+        }
+
+        if (flashlight.enabled)
+        {
+            currentStamina = Mathf.Max(currentStamina - drainSpeed * Time.deltaTime, 0f);
+        } else
+        {
+            currentStamina = Mathf.Min(currentStamina + rechargeSpeed * Time.deltaTime, maxStamina);
+        }
+        
+        if (currentStamina == 0)
+        {
+            outOfBattery = true;
+            StartCoroutine(FlashlightFlicker());
+        }
+    }
+
+    IEnumerator FlashlightFlicker()
+    {
+        flashlight.enabled = false;
+        yield return new WaitForSeconds(0.15f);
+        flashlight.enabled = true;
+        yield return new WaitForSeconds(0.15f);
+        flashlight.enabled = false;
+        yield return new WaitForSeconds(0.15f);
+        flashlight.enabled = true;
+        yield return new WaitForSeconds(0.15f);
+        flashlight.enabled = false;
+        yield return new WaitForSeconds(0.15f);
+        flashlight.enabled = true;
+        yield return new WaitForSeconds(0.15f);
+        flashlight.enabled = false;
+        yield return new WaitForSeconds(0.2f);
+        flashlight.enabled = true;
+        yield return new WaitForSeconds(0.2f);
+        flashlight.enabled = false;
     }
 }

@@ -228,6 +228,8 @@ GameObject:
   - component: {fileID: 8166079418006379528}
   - component: {fileID: 8096373103078999051}
   - component: {fileID: 2529234813627835961}
+  - component: {fileID: 5833795633939335365}
+  - component: {fileID: 2356044441220044296}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -270,7 +272,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.993
+    m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -363,6 +365,55 @@ MonoBehaviour:
     mode: 0
     dimIntensity: 0
     flickerSpeed: 0
+  - name: 
+    mode: 3
+    dimIntensity: 0
+    flickerSpeed: 0
+--- !u!114 &5833795633939335365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7386071375551702571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db57d367456387d43b1a0779b9e8c596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LightSafeZone
+  isOn: 1
+  isFlickering: 0
+  lightSource: {fileID: 8166079418006379528}
+  duration: 8
+  peakIntensity: 17
+  flickerFrequencyCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  source: {fileID: 0}
+--- !u!65 &2356044441220044296
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7386071375551702571}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 0, z: 5}
 --- !u!1 &8761089448993235671
 GameObject:
   m_ObjectHideFlags: 0

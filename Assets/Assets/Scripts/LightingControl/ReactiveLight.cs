@@ -96,13 +96,6 @@ public class ReactiveLight : MonoBehaviour
 
         // Apply the result smoothly
         // (If flickering, we snap instantly for jerkiness; otherwise we fade)
-        if (currentSetting.mode == LightMode.Flicker)
-        {
-             myLight.intensity = targetIntensity;
-        }
-        else
-        {
-             myLight.intensity = Mathf.Lerp(myLight.intensity, targetIntensity, Time.deltaTime * transitionSpeed);
-        }
+        myLight.intensity = targetIntensity;
     }
 }
