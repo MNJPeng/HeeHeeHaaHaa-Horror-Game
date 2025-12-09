@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3478516388044044503}
   - component: {fileID: 7679836621281062384}
   - component: {fileID: 3591823160285988110}
-  - component: {fileID: 294836071408438087}
   - component: {fileID: 3722280226783405867}
   - component: {fileID: 2708345601180005172}
   - component: {fileID: 8576876696031944850}
@@ -30,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2682788350706072215}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 21.21, y: 9.82, z: -17.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -131,29 +130,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
---- !u!136 &294836071408438087
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2682788350706072215}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 4.19905
-  m_Height: 15.363119
-  m_Direction: 2
-  m_Center: {x: -0.09416199, y: -0.08179331, z: 6.085328}
 --- !u!114 &3722280226783405867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,26 +153,35 @@ MonoBehaviour:
     - serializedVersion: 3
       time: -0.026668549
       value: -0.05804062
-      inSlope: 0.46663585
-      outSlope: 0.46663585
-      tangentMode: 0
+      inSlope: 0.24183719
+      outSlope: 0.24183719
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.37337777
+      outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.30231798
-      value: 0.3555413
-      inSlope: 0.927998
-      outSlope: 0.927998
+      time: 0.55441
+      value: 0.13407695
+      inSlope: 0.5028585
+      outSlope: 0.5028585
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
+      outWeight: 0.55003613
+    - serializedVersion: 3
+      time: 0.8484893
+      value: 0.34381193
+      inSlope: 1.5073358
+      outSlope: 1.5073358
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.1451635
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.8627646
-      value: 0.7585151
-      inSlope: 0.9332153
-      outSlope: 0.9332153
+      time: 0.96260667
+      value: 0.7581752
+      inSlope: 6.3250976
+      outSlope: 6.3250976
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
@@ -204,8 +189,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 1.7596399
-      outSlope: 1.7596399
+      inSlope: 6.4670568
+      outSlope: 6.4670568
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -326,9 +311,9 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6.9885635, y: 7.8564816, z: 13.760258}
-  m_Center: {x: 0.37742996, y: -1.0006118, z: 6.3801312}
+  m_Size: {x: 6.4851418, y: 6.7170186, z: 13.760258}
+  m_Center: {x: 0.12571907, y: -0.43088007, z: 6.3801312}

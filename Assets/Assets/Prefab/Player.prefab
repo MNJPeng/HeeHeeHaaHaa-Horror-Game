@@ -12,13 +12,13 @@ GameObject:
   - component: {fileID: 2706032687709201916}
   - component: {fileID: 5621718153944192502}
   - component: {fileID: 8241638267584764579}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: toolTipCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4885312104552652806
 RectTransform:
   m_ObjectHideFlags: 0
@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 2066665096379817260}
   - component: {fileID: 4917179459742940219}
   - component: {fileID: 8949852512932487782}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Red_Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,9 +137,9 @@ RectTransform:
   m_Father: {fileID: 2828669650185453742}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -0.048778534, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2066665096379817260
 CanvasRenderer:
@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 5060612225227502167}
   - component: {fileID: 7490591276223398891}
   - component: {fileID: 2379060688798530794}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Flashlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,8 +238,8 @@ Light:
   serializedVersion: 12
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 30
+  m_Intensity: 5.71
+  m_Range: 32.3
   m_SpotAngle: 60
   m_InnerSpotAngle: 20
   m_CookieSize2D: {x: 0.5, y: 0.5}
@@ -334,6 +334,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlashlightController
   flashlightInput: {fileID: 0}
+  currentStamina: 100
+  drainSpeed: 7
+  rechargeSpeed: 20
+  outOfBattery: 0
 --- !u!1 &3769915789808331232
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,7 +350,7 @@ GameObject:
   - component: {fileID: 875757419242118838}
   - component: {fileID: 2070858306791038160}
   - component: {fileID: 5397134714243431913}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Green_Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -368,9 +372,9 @@ RectTransform:
   m_Father: {fileID: 2828669650185453742}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -0.048778534, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &875757419242118838
 CanvasRenderer:
@@ -437,7 +441,7 @@ GameObject:
   - component: {fileID: 3453941134310032266}
   - component: {fileID: 2356242798180798042}
   - component: {fileID: 1692532271287775444}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -594,7 +598,7 @@ GameObject:
   - component: {fileID: 2479102925453901917}
   - component: {fileID: 3171310312285525407}
   - component: {fileID: 2477437937294492052}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -804,7 +808,7 @@ GameObject:
   - component: {fileID: 950362173018238540}
   - component: {fileID: 7878647751387130207}
   - component: {fileID: 2056259114634484502}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -880,7 +884,7 @@ GameObject:
   - component: {fileID: 1915299026894242363}
   - component: {fileID: 5596362576022684959}
   - component: {fileID: 911942673984023474}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1018,7 +1022,7 @@ GameObject:
   - component: {fileID: 4434137219833434329}
   - component: {fileID: 6974121189851308420}
   - component: {fileID: 8729017528438939796}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Loading_Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1040,9 +1044,9 @@ RectTransform:
   m_Father: {fileID: 2828669650185453742}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -0.048778534, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4434137219833434329
 CanvasRenderer:
@@ -1106,7 +1110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2828669650185453742}
   - component: {fileID: 1285070110141722138}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fill_Ring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1154,7 +1158,7 @@ GameObject:
   - component: {fileID: 5801539175481093641}
   - component: {fileID: 7707656447456998289}
   - component: {fileID: 8110802117616686067}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1292,7 +1296,7 @@ GameObject:
   - component: {fileID: 470827824454431596}
   - component: {fileID: 8725047930130229364}
   - component: {fileID: 4097056953687891315}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
