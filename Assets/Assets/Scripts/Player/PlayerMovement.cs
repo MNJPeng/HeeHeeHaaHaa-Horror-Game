@@ -13,6 +13,9 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
     public PlayerInput playerInput;
     public Transform cameraTransform;
+    [Header("Audio")]
+    public AudioClip walkSound;        
+    public AudioClip runSound;
 
     private InputAction moveAction;
     private InputAction lookAction;
@@ -22,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
 	
 	private float analyzeTime = 0f;
 	private bool canAnalyze = true;
+    public AudioSource audioSource;
 	[SerializeField] private Image analyzeCircle;
 	[SerializeField] private Image validAnalyze;
 	[SerializeField] private Image invalidAnalyze;
@@ -31,7 +35,6 @@ public class PlayerMovement : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-
         // Setup Actions
         // Make sure the name "Sprint" matches exactly what you typed in the Input Actions window
         moveAction = playerInput.actions["Move"];
@@ -89,6 +92,13 @@ public class PlayerMovement : MonoBehaviour
         // We only sprint if the button is held AND we are actually walking forward.
         // This prevents sprinting while moving backward (S) or purely sideways (A/D).
         float currentSpeed = (sprintAction.IsPressed() && isMovingForward) ? sprintSpeed : moveSpeed;
+        if (sprintAction.IsPressed() && isMovingForward){
+            audioSource.PlayOneShot(runSound);
+        }
+        else
+        {
+            audioSource.PlayOneShot(walkSound);
+        }
 
         Vector3 moveDirection = transform.right * inputVector.x + transform.forward * inputVector.y;
         
