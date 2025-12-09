@@ -20,7 +20,7 @@ public class DialogueManager : MonoBehaviour
     [Header("References")]
     public TextMeshProUGUI subtitleText;
 
-    public event Action<Dialogue> onDialogueEnd; // the argument is the dialogue that just ended
+    public static event Action<Dialogue> onDialogueEnd; // the argument is the dialogue that just ended
 
     // call this from other scripts to start a dialogue
     public void StartDialogue(Dialogue dialogue) {
