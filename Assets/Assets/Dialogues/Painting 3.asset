@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   id: test
   lines:
-  - text: There's a light peeking out behind the paintings
-  - text: How strange...
+  - text: But then they came.
+    isItalic: 1
+  - text: They disrupted the peace
+    isItalic: 1
+  - text: War is war.
+    isItalic: 0
   canInterrupt: 1
   canBeInterrupted: 1
