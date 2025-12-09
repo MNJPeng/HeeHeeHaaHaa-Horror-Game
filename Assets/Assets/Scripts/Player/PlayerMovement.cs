@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -20,8 +21,11 @@ public class PlayerMovement : MonoBehaviour
     private float xRotation = 0f;
 	
 	private float analyzeTime = 0f;
+	private bool canAnalyze = true;
+	[SerializeField] private Image analyzeCircle;
+	[SerializeField] private Image validAnalyze;
+	[SerializeField] private Image invalidAnalyze;
 
-	private int cursorIdx = 0; // 0: Charging 
 
     void Start()
     {
@@ -42,7 +46,12 @@ public class PlayerMovement : MonoBehaviour
 		rb.linearVelocity = Vector3.zero;
 		if (analyzeAction.IsPressed()) {
 			HandleAnalyze();
-		} else {				
+		} else {
+			analyzeTime = 0f;
+			analyzeCircle.fillAmount = 0f;
+			canAnalyze = true;
+			invalidAnalyze.enabled = false;
+			validAnalyze.enabled = false;
 			HandleMovement();
 			HandleLook();
 		}
@@ -51,19 +60,20 @@ public class PlayerMovement : MonoBehaviour
 	void HandleAnalyze()
 	{
 		analyzeTime += Time.deltaTime;
-		if (analyzeTime >= 3f) {
-			Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0));;
-
-			/* if (Physics.SphereCast(ray, interactRadius, out RaycastHit hitInfo, interactRange) &&
-				hitInfo.collider.TryGetComponent(out Interactable interactObj))
-			{
-				if (!interactObj.CheckIsInteractable()) return;
-
-				currInteractObj = interactObj;
-				tooltipCanvas.alpha = 1f;
-				tooltipText.text = interactObj.GetInteractTip();
-			} */
+		analyzeCircle.fillAmount = analyzeTime / 3f;
+		if (analyzeTime >= 3f && canAnalyze) {
+			analyzeCircle.fillAmount = 0f;
+			invalidAnalyze.enabled = true;
 			
+			Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0));;
+			if (Physics.SphereCast(ray, 0.1f, out RaycastHit hitInfo, 2f) &&
+				hitInfo.collider.TryGetComponent(out Scannable scannedObj))
+			{
+				validAnalyze.enabled = true;
+				invalidAnalyze.enabled = false;
+				scannedObj.Scan();
+			}
+			canAnalyze = false;
 		}
 	}
 
