@@ -5,6 +5,7 @@ public class DoorInteractable : Interactable
 {
 
     [SerializeField] private string interactTip; // What word shows up on the tooltip when you look at the object
+	[SerializeField] private Mission roomMission;
 
 	[Header("Audio Settings")]
     public AudioClip openSound;  // Drag your "Creak_Open.wav" here
@@ -13,6 +14,8 @@ public class DoorInteractable : Interactable
 	private Animator animator;
 	private AudioSource audioSource;
 	private bool isOpen;
+	
+	private bool isLocked = false;
 
 	void Start() {
 		animator = GetComponent<Animator>();
@@ -40,10 +43,18 @@ public class DoorInteractable : Interactable
     }
 
     public void OnAnimEnd() {
+		if (isLocked) return;
         canInteract = true;
     }
 
     public override bool CheckIsInteractable() {
         return canInteract;
     }
+	
+	public void OnNextMissionStart() {
+		isLocked = true;
+		canInteract = false;
+		animator.SetTrigger("Close");
+		if (closeSound != null) audioSource.PlayOneShot(closeSound);
+	}
 }
