@@ -16,7 +16,12 @@ public class PlayerMovement : MonoBehaviour
     private InputAction moveAction;
     private InputAction lookAction;
     private InputAction sprintAction; // NEW: Reference to the sprint input
+	private InputAction analyzeAction;
     private float xRotation = 0f;
+	
+	private float analyzeTime = 0f;
+
+	private int cursorIdx = 0; // 0: Charging 
 
     void Start()
     {
@@ -28,14 +33,39 @@ public class PlayerMovement : MonoBehaviour
         moveAction = playerInput.actions["Move"];
         lookAction = playerInput.actions["Look"];
         sprintAction = playerInput.actions["Sprint"]; // NEW: Get the action
+		analyzeAction = playerInput.actions["Analyze"];
     }
 
     void Update()
     {
         rb.angularVelocity = Vector3.zero;
-        HandleMovement();
-        HandleLook();
+		rb.linearVelocity = Vector3.zero;
+		if (analyzeAction.IsPressed()) {
+			HandleAnalyze();
+		} else {				
+			HandleMovement();
+			HandleLook();
+		}
     }
+
+	void HandleAnalyze()
+	{
+		analyzeTime += Time.deltaTime;
+		if (analyzeTime >= 3f) {
+			Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0));;
+
+			/* if (Physics.SphereCast(ray, interactRadius, out RaycastHit hitInfo, interactRange) &&
+				hitInfo.collider.TryGetComponent(out Interactable interactObj))
+			{
+				if (!interactObj.CheckIsInteractable()) return;
+
+				currInteractObj = interactObj;
+				tooltipCanvas.alpha = 1f;
+				tooltipText.text = interactObj.GetInteractTip();
+			} */
+			
+		}
+	}
 
     void HandleMovement()
     {
