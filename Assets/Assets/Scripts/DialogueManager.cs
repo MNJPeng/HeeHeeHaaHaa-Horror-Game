@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour
     private bool isInDialogue = false;
 
     private Queue<string> sentences = new Queue<string>();
+	private Queue<bool> style = new Queue<bool>();
     private Dialogue currentDialogue;
 
     [Header("Settings")]
@@ -39,6 +40,7 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
         foreach (DialogueLine line in dialogue.lines) {
             sentences.Enqueue(line.text);
+			style.Enqueue(line.isItalic);
         }
         
         StartCoroutine(PlayDialogue());
@@ -50,6 +52,8 @@ public class DialogueManager : MonoBehaviour
 
         while (sentences.Count > 0) {
             string sentence = sentences.Dequeue();
+			bool isItalic = style.Dequeue();
+			subtitleText.fontStyle = isItalic ? FontStyles.Italic : FontStyles.Normal;
             subtitleText.text = "";
 
             foreach(char letter in sentence.ToCharArray())
