@@ -20,3 +20,6 @@ MonoBehaviour:
   - id: objective2
     type: 0
     dialogueId: objective2
+  lockedDoors:
+  - {fileID: 0}
+  - {fileID: 0}

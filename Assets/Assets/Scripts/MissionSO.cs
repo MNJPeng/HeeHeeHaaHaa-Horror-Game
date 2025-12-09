@@ -17,4 +17,5 @@ public class ObjectiveData
 public class MissionSO : ScriptableObject {
     public string id;
     public List<ObjectiveData> objectives = new List<ObjectiveData>();
+	public List<DoorInteractable> lockedDoors = new List<DoorInteractable>();
 }

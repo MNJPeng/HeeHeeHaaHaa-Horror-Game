@@ -10,6 +10,7 @@ public class Mission
     public bool isCompleted = false;
 
     public event Action<Mission> onMissionComplete;
+	public event Action<Mission> onMissionStart;
 
     public Mission(MissionSO so)
     {
@@ -23,7 +24,8 @@ public class Mission
                 objectives.Add(objective);
                 objective.onObjectiveComplete += onObjectiveComplete;
             }
-        }
+        }		
+		onMissionStart?.Invoke(this);
     }
 
     public void onObjectiveComplete(Objective currObj) {
