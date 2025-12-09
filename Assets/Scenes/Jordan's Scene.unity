@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 702835791}
-  dialogue: {fileID: 11400000, guid: f245e97bddd936042965d2b448390979, type: 2}
+  dialogue: {fileID: 11400000, guid: c5d0d6c11f4e59640a82f79f29292170, type: 2}
 --- !u!65 &23934155
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 702835791}
-  dialogue: {fileID: 11400000, guid: f245e97bddd936042965d2b448390979, type: 2}
+  dialogue: {fileID: 11400000, guid: 76874936180139540b596490b5455cd7, type: 2}
 --- !u!65 &73653822
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -645,7 +645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 702835791}
-  dialogue: {fileID: 11400000, guid: f245e97bddd936042965d2b448390979, type: 2}
+  dialogue: {fileID: 11400000, guid: 937e6d50d02d49a46be0a5530ed8b581, type: 2}
 --- !u!65 &99681981
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -939,7 +939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 702835791}
-  dialogue: {fileID: 11400000, guid: f245e97bddd936042965d2b448390979, type: 2}
+  dialogue: {fileID: 11400000, guid: ba3b97a0d3294174085f83b75f7144bb, type: 2}
 --- !u!65 &126332093
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1234,7 +1234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 702835791}
-  dialogue: {fileID: 11400000, guid: f245e97bddd936042965d2b448390979, type: 2}
+  dialogue: {fileID: 11400000, guid: 7fb60f7699af83b40ae059d16e41bc25, type: 2}
 --- !u!65 &205793489
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1756,7 +1756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 702835791}
-  dialogue: {fileID: 11400000, guid: f245e97bddd936042965d2b448390979, type: 2}
+  dialogue: {fileID: 11400000, guid: e924db8e1997f49429328e7ee4856659, type: 2}
 --- !u!65 &424879571
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2199,7 +2199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 702835791}
-  dialogue: {fileID: 11400000, guid: f245e97bddd936042965d2b448390979, type: 2}
+  dialogue: {fileID: 11400000, guid: 2e90603df8fe3ad4383f0008fa2aba0b, type: 2}
 --- !u!65 &720747610
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2267,7 +2267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 702835791}
-  dialogue: {fileID: 11400000, guid: f245e97bddd936042965d2b448390979, type: 2}
+  dialogue: {fileID: 11400000, guid: 0e558ca6c9a52f64cad44c4b03fda89f, type: 2}
 --- !u!65 &740212225
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3759,7 +3759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 702835791}
-  dialogue: {fileID: 11400000, guid: f245e97bddd936042965d2b448390979, type: 2}
+  dialogue: {fileID: 11400000, guid: af4fd39f81c11ed4988a09505620de4a, type: 2}
 --- !u!65 &1160162765
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5734,7 +5734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 702835791}
-  dialogue: {fileID: 11400000, guid: f245e97bddd936042965d2b448390979, type: 2}
+  dialogue: {fileID: 11400000, guid: da9b70ef15cb0f941ab69cc0a77ed0af, type: 2}
 --- !u!65 &1758478130
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6029,7 +6029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 702835791}
-  dialogue: {fileID: 11400000, guid: f245e97bddd936042965d2b448390979, type: 2}
+  dialogue: {fileID: 11400000, guid: 6aacda199e920ab499b136d1a26d113f, type: 2}
 --- !u!65 &2048932541
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6097,7 +6097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SampleScannable
   dialogueManager: {fileID: 702835791}
-  dialogue: {fileID: 11400000, guid: f245e97bddd936042965d2b448390979, type: 2}
+  dialogue: {fileID: 11400000, guid: d0ec8475c94279d4a8161dc5cfc8a588, type: 2}
 --- !u!65 &2107711562
 BoxCollider:
   m_ObjectHideFlags: 0
